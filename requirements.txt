@@ -1,3 +1,4 @@
-pickle
+catboost
 streamlit
 pandas
+numpy
