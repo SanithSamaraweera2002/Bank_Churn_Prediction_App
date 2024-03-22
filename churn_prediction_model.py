@@ -1,19 +1,7 @@
 import streamlit as st
 import pickle
-import requests
 import pandas as pd
 
-
-# def download_model():
-#     url = 'https://github.com/SanithSamaraweera2002/Bank_Churn_Prediction_App/raw/main/churn_prediction_model.pkl'
-#     response = requests.get(url)
-#     with open('churn_prediction_model.pkl', 'wb') as f:
-#         f.write(response.content)
-
-# # Check if the model file exists, if not, download it
-# if not st.file_uploader('churn_prediction_model.pkl'):
-#     st.text('Downloading model file...')
-#     download_model()
 
 churn_prediction_model = pickle.load(open('churn_prediction_model.pkl', 'rb'))
 
